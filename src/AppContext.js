@@ -5,7 +5,9 @@ export const AppContext = createContext();
 export const AppContextProvider = props => {
     const [quote, setQuote] = useState({});
     const [rdIndex, setRdIndex] = useState(1);
-    const [bgColor, setBgColor] = useState();
+    const [bgColor, setBgColor] = useState("#FB6964");
+
+
 
     const stateValue = {
         quoteState: [quote, setQuote],
