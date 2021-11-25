@@ -37,10 +37,11 @@ export default function App() {
             <section id="quote-box">
                 <Quote />
                 <div className="btns">
-                    <a href={tweetQuote()} id="tweet-quote" target="_blank">Tweet</a>
+                    <a href={tweetQuote()} className="btn" style={{ background: bgColor }} id="tweet-quote" target="_blank">Tweet</a>
                     <Button _handleClick={() => generateIndex()} _id="new-quote" _btnValue="New Quote" />
                 </div>
             </section>
+            <section className="footer" style={{ textAlign: "center", color: "gray-scale(100%)" }}>Coded by Minh Phan</section>
         </div>
     )
 }
